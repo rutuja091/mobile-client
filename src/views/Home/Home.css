@@ -1,98 +1,40 @@
-/* Container for the entire page */
+/* Home.css */
+
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #f0f8ff; /* Light AliceBlue background for a fresh look */
-  padding: 30px;
-  min-height: 100vh; /* Ensure the container takes full viewport height */
-  box-sizing: border-box;
+  background-color: c9def4;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  min-height: 100vh; 
+  padding: 20px; 
 }
 
-/* Container for heading and button */
 .form-heading-cont {
-  display: flex;
-  justify-content: space-between;
-  width: 90%; /* Wider container for better alignment */
-  margin-bottom: 30px;
-  align-items: center;
-  border-bottom: 2px solid #e0e0e0; /* Light border for separation */
-  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-/* Heading style */
 .form-heading {
-  font-size: 26px;
-  font-weight: 700;
-  color: #333; /* Darker color for better readability */
+  font-size: 2rem;
+  font-weight: bold;
+  color: white; 
 }
 
-/* Button to add new mobile */
 .button-add {
-  text-decoration: none;
-  background-color: #007bff; /* Bright blue background for the button */
+  background-color: darkorange;
   color: white;
-  padding: 12px 24px;
-  border-radius: 6px;
-  font-weight: 600;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
 
 .button-add:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background-color: #e07b3c; 
 }
-/* Mobile card container */
+
 .mobile-card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Adjust spacing between cards */
-}
+  gap: 20px; 
 
-/* Individual mobile card */
-.mobile-card {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 100%; /* Adjust card width as needed */
-}
-
-/* Mobile name */
-.mobile-name {
-  font-weight: bold;
-  font-size: 16px;
-}
-
-/* Mobile company */
-.mobile-company {
-  color: #888888;
-  font-size: 14px;
-}
-
-/* Mobile price */
-.mobile-price {
-  font-size: 18px;
-  color: #007bff; /* Customize color */
-}
-
-/* Mobile image */
-.mobile-image {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-/* Mobile description */
-.mobile-description {
-  font-size: 14px;
-  margin-top: 10px;
-}
-
-/* Hover effect */
-.mobile-card:hover {
-  transform: translateY(-5px);
-  transition: transform 0.2s ease;
+  
 }

@@ -3,8 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
-  background: #f4f4f4; /* Light gray background for contrast */
+  height: 100vh; 
+  background: #f4f4f4; 
   padding: 20px;
   box-sizing: border-box;
 }
@@ -12,7 +12,7 @@
 /* Style for the form */
 form {
   width: 100%;
-  max-width: 600px; /* Optional: max width for larger screens */
+  max-width: 600px; 
   background: white;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -49,13 +49,13 @@ label {
 
 /* Image preview styling */
 .img-preview {
-  width: 100%; /* Full width of the container */
-  max-width: 200px; /* Optional: max width for image */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%; 
+  max-width: 200px;
+  height: auto; 
   border: 1px solid #ddd;
   border-radius: 4px;
   margin-bottom: 10px;
-  object-fit: cover; /* Ensure image covers the box without distortion */
+  object-fit: cover; 
 }
 
 /* Button styling */
