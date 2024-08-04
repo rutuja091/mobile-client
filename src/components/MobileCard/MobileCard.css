@@ -1,0 +1,93 @@
+/* MobileCard.css */
+
+/* Mobile Card Container */
+.container {
+    margin: 20px;
+}
+
+.mobile-card {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-image {
+    width: 150px; /* Adjust as needed */
+    height: auto;
+    object-fit: cover;
+}
+
+.mobile-details {
+    padding: 15px;
+    flex: 1;
+}
+
+.mobile-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.mobile-company {
+    color: #777;
+}
+
+.mobile-price {
+    color: green; /* Green color for price */
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.mobile-description {
+    margin-top: 10px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-top: 15px;
+}
+
+/* Button Styling */
+.button {
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 8px 12px;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.icon {
+    width: 20px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Update Button Styling */
+.update-button {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+}
+
+.update-button:hover {
+    background-color: #0056b3;
+}
+
+/* Delete Button Styling */
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    text-align: center;
+    border: none;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}

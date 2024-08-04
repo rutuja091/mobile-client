@@ -1,8 +1,11 @@
 import React from 'react'
 import "./MobileCard.css"
 import axios from 'axios'
+import editimg from "./edit.png"
+import dltimg from "./bin.png"
 import toast from 'react-hot-toast'
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
 
 function MobileCard({ _id, name, company, image, price, description, loadMobiles }) {
 
@@ -34,19 +37,35 @@ function MobileCard({ _id, name, company, image, price, description, loadMobiles
       <div className="button-container">
 
 
-      <Link
-        className='button update-button'
+      {/* <Link
+        className='button  update-button'
         to={`/update/${_id}`}>
         Edit
-      </Link>
+      </Link> */}
 
-      <button
+<Link className='button update-button' to={`/update/${_id}`}>
+              <img src={editimg} alt="Edit" className="icon" />
+            
+            </Link>
+
+      {/* <button
         type='button'
         className='button delete-button'
         onClick={() => {
           deleteMobile(_id)
         }}>
-        Delete</button>
+        Delete</button> */}
+
+<button
+              type='button'
+              className='button delete-button'
+              onClick={() => {
+                deleteMobile(_id);
+              }}>
+              <img src={dltimg} alt="Delete" className="icon" />
+            
+            </button>
+
 
       </div>
 
