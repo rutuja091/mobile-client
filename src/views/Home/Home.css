@@ -9,11 +9,8 @@ body {
   
   .container {
     max-width: 1200px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 0 20px;
   }
   
   .form-heading-cont {
@@ -35,8 +32,8 @@ body {
     color: #fff;
     border: none;
     border-radius: 4px;
-    font-size: 16px;
     text-decoration: none;
+    font-size: 16px;
     cursor: pointer;
   }
   
@@ -44,50 +41,102 @@ body {
     background-color: #0056b3;
   }
   
-  .add-btn {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-  }
-  
   .mobile-card-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-between;
   }
   
+  /* MobileCard.css */
+  
   .mobile-card {
+    flex: 1 1 calc(25% - 20px);
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: calc(33.333% - 20px);
+    padding: 20px;
     margin-bottom: 20px;
-    padding: 15px;
-    box-sizing: border-box;
     transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .mobile-card:hover {
     transform: translateY(-5px);
   }
   
-  .mobile-card img {
+  .mobile-image {
     max-width: 100%;
     height: auto;
     border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .mobile-details {
+    text-align: left;
+  }
+  
+  .mobile-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
     margin-bottom: 10px;
   }
   
-  .mobile-card h3 {
-    margin: 0;
-    font-size: 20px;
-    color: #333;
+  .mobile-company {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
   }
   
-  .mobile-card p {
-    margin: 5px 0;
-    color: #666;
+  .mobile-price {
+    font-size: 16px;
+    color: #28a745; /* Green color for price */
+    margin-bottom: 10px;
+  }
+  
+  .mobile-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+    flex: 1;
+    margin: 0 5px;
+  }
+  
+  .update-button {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .update-button:hover {
+    background-color: #333;
+  }
+  
+  .delete-button {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .delete-button:hover {
+    background-color: #333;
   }
   
