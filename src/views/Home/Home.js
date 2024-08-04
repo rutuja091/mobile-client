@@ -10,7 +10,7 @@ function Home() {
 
   const loadMobiles = async () => {
     toast.loading("Loading Mobiles...");
-    const response = await axios.get(`${process.env.REACT_APP_API_URL}/mobiles`);
+    const response = await axios.get(`https://mobile-server-88sq.onrender.com/mobiles`);
     toast.dismiss();
     toast.success("Mobiles Loaded Successfully");
     setMobiles(response.data.data);
